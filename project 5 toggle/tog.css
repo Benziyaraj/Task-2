@@ -1,0 +1,48 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --link: #0066cc;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #eaeaea;
+  --link: #4dabf7;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
+}
+
+button {
+  margin-top: 1rem;
+  background: var(--link);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.9;
+  outline: 2px solid var(--text);
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+}
